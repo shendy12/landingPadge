@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.386);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+
+}
+
+
+
+body{
+    background-color: #ffc400;
+}
+.section-padding{
+    padding: 100px 0;
+}
+
+.carousel-item{
+    height: 100hv;
+    min-height: 300px;
+}
+
+.carousel-caption{
+    bottom: 200px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    /*jarak antara huruf dalam teks*/
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9s;
+}
+/*menargetkan elemen di bagian awal untuk membuat lapisan pada gambar di home*/
+.carousel-inner::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+}
+
+.navbar .navbar-brand{
+    color: #ffffff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/**/
+
+.navbar .navbar-nav .navbar-link{
+    color: #ffffff;
+}
+
+.w-100{
+    height: 100vh;
+}
+
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #ffc400;
+}
+ 
+.record .row .col:nth-last-child(1){
+	background-color: #ff6a0060;
+}
+
+
+.portfolio .card {
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+.team .card {
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+.services .card-body i {
+	font-size: 50px;
+}
+
+.services img {
+	width: 250px;
+	height: 400px;
+  }
+  
+  .services h5 {
+	line-height: 1.8;
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+  }
+  
+  .services .con i {
+	color: green;
+	font-size: 30px;
+  }
+
+  
+.team .card-body i {
+	font-size: 20px;
+}
+
+.faq {
+	padding-top: 100px;
+  }
+  
+  .faq .accordion {
+	--bs-accordion-bg: #e9edc9;
+  }
+  
+  .faq .accordion .accordion-button:focus {
+	box-shadow: none;
+  }
+  
+  .footer {
+	min-height: 60vh;
+	background-color: #15181f;
+	margin-top: 150px;
+  }
+  
+  .footer .copyright {
+	padding-top: 100px;
+  }
+
+  
+  .footer .i {
+    color: #ffffff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+/*animasi*/
+.carousel-inner .carousel-caption h5{
+
+  --animate-delay: 0.8s;
+}
+
+.carousel-inner .carousel-caption p{
+  --animation-delay: 1.4s;
+}
+
+.carousel-inner .carousel-caption a{
+  --animation-delay: 1.9s ;
+}
+  
+/* Media query untuk ukuran layar kurang dari atau sama dengan 767px */
+@media only screen and (max-width: 767px) {
+	/* Pusatkan link pada navbar */
+	.navbar-nav {
+		text-align: center;
+	}
+	
+	/* Penyesuaian penempatan caption pada carousel */
+	.carousel-caption {
+		bottom: 125px;
+	}
+	
+	/* Penyesuaian ukuran font judul pada carousel */
+	.carousel-caption h5 {
+		font-size: 17px;
+	}
+	
+	/* Penyesuaian padding untuk tombol pada carousel */
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	
+	/* Penyesuaian lebar paragraf pada carousel */
+	.carousel-caption p {
+		width: 100%;
+		line-height: 1.6;
+		font-size: 12px;
+	}
+	
+	/* Padding atas untuk bagian about-text */
+	.about-text {
+		padding-top: 50px;
+	}
+	
+	/* Margin bottom untuk kartu */
+	.card {
+		margin-bottom: 30px;
+	}
+}

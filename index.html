@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildingCon</title>
+        <!--Link untuk icon di title-->
+        <link rel="shortcut icon" href="./assets/images/logo2.png" type="image/x-icon">
+        <!--Link ke bootstrap css-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!--Link icon dari bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!--Animasi style link-->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        <!--AOS animasi on Scrool-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+               <!--Link ke local css-->
+        <link href="./assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg  fixed-top animate__animated animate__fadeInDown">
+        <div class="container">
+            <!--Untuk logo/ nama perusahaan, penggunaan warning ialah template warna dari bootstrap-->
+          <a class="navbar-brand w-bold fs-4" href="#"><span class="text-warning">Building</span>Con</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <!--Home-->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <!--About-->
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li> 
+              <!--Services-->
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li> 
+              <!--Portofolio-->
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <!--Team-->
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Team</a>
+              </li> 
+              <!--Faq-->
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>
+              <!--Comtact-->
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>        
+            </ul>
+            <div class="text-center">
+                <i class="bi bi-linkedin text-white mx-lg-0 "></i>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+    <!--Navbar-->
+
+    <!--Home-->
+      <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/rumah1.png" class="d-block w-100" alt="rumah1">
+            <div class="carousel-caption">
+              <h5 class="fw-bold mb-2 animate__animated animate__fadeInUp animate__delay-1s">Your Dream House</h5>
+                              <p class="animate__animated animate__fadeInUp animate__delay-1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
+                              <p><a href="#" class="btn btn-warning mt-3 animate__animated animate__fadeInUp animate__delay-1s">Learn More</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/rumah2.png" class="d-block w-100" alt="rumah2">
+            <div class="carousel-caption">
+              <h5 class="fw-bold mb-2 animate__animated animate__fadeInUp animate__delay-1s">Always Dedicated</h5>
+                              <p class="animate__animated animate__fadeInUp animate__delay-1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
+                              <p><a href="#" class="btn btn-warning mt-3 animate__animated animate__fadeInUp animate__delay-1s">Learn More</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/rumah3.png" class="d-block w-100" alt="rumah3">
+            <div class="carousel-caption">
+              <h5 class="fw-bold mb-2 animate__animated animate__fadeInUp animate__delay-1s">True Construction</h5>
+                              <p class="animate__animated animate__fadeInUp animate__delay-1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
+                              <p><a href="#" class="btn btn-warning mt-3 animate__animated animate__fadeInUp animate__delay-1s">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+        <!--Untuk lanjut dan kembali-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+<!--record kerja liet-->
+
+    <div class="record">
+        <div class="conatiner">
+            <!--2 colom saa ukuran windows dan 1 colom saat kecil / hp-->
+            <div class="row row-cols-lg-2 row-cols-1">
+                <div class="col text-center text-bg-dark py-4" data-aos="fade-right" data-aos-duration="1800">
+                 
+                    <h2>200+</h2>
+                    <h2 class="fw-bold mb-2">Perojek Telah Selesai</h2>
+                    <p>Lorem ipsum dolor sit,<br> amet consectetur adipisicing elit. Consectetur, hic!</p>
+                </div>
+
+
+                <div class="col text-center text-white py-4" data-aos="fade-left" data-aos-duration="1800">
+
+                    <h2>200+</h2>
+                    <h2 class="fw-bold mb-2">Rekan Kerja Perusahaan</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Ratione.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+            <!-- about section starts -->
+            <section id="about" class="about section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-12">
+                            <div class="about-img ">
+                                <img src="./assets/images/about.png" alt="" class="img-fluid" data-aos="fade-right" data-aos-duration="1000">
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                            <div class="about-text" data-aos="fade-left" data-aos-duration="1200">
+                                  <h2 class="fw-semibold">We Provide the Best Quality <br/> Services Ever</h2>
+                                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, labore reiciendis. Assumenda eos quod animi! Soluta nesciunt inventore dolores excepturi provident, culpa beatae tempora, explicabo corporis quibusdam corrupti. Autem, quaerat. Assumenda quo aliquam vel, nostrum explicabo ipsum dolor, ipsa perferendis porro doloribus obcaecati placeat natus iste odio est non earum?</p>
+                                  <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- about section Ends -->
+
+            <!-- services section Starts -->
+            <section class="services section-padding" id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-header text-center pb-5">
+                                <h2 class="fw-semibold">Our Services</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Non, quo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-md-12 col-lg-4">
+                          <div class="card text-white text-center bg-dark pb-2">
+                              <div class="card-body">
+                                  <i class="bi bi-laptop"></i>
+                                  <h3 class="card-title">Best Quality</h3>
+                                  <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p>
+                                  <button class="btn bg-warning text-dark">Read More</button>
+                              </div>
+                          </div>
+                      </div>
+                        <div class="col-12 col-md-12 col-lg-4">
+                            <div class="card text-white text-center bg-dark pb-2">
+                                <div class="card-body">
+                                  <i class="bi bi-journal"></i>
+                                    <h3 class="card-title">Sustainability</h3>
+                                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p>
+                                    <button class="btn bg-warning text-dark">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-4">
+                            <div class="card text-white text-center bg-dark pb-2">
+                                <div class="card-body">
+                                  <i class="bi bi-intersect"></i>
+                                    <h3 class="card-title">Integrity</h3>
+                                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p>
+                                    <button class="btn bg-warning text-dark">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<br><br><br>
+                <div class="container">
+                    <div class="row mb-4">
+                      <div class="col">
+                      </div>
+                    </div>
+                    <div class="row align-items-center row-cols-lg-2 row-cols-1">
+                      <div class="col d-flex d-lg-block d-none">
+                        <img src="./assets/images/s1.jpeg.png" class="me-1" alt="" />
+                        <img src="./assets/images/s2.png" alt=""/>
+                      </div>
+                      <div class="col con">
+                        <h5><i class="bi bi-check2-circle"></i></i> Berkerjasama dengan Design Hebat</h5>
+                        <h5><i class="bi bi-check2-circle"></i></i> Alat dan SDM yang Berkualitas serta Berpengalaman</h5>
+                        <h5><i class="bi bi-check2-circle"></i></i> Tersedia Produk - Produk Interior</h5>
+                        <h5><i class="bi bi-check2-circle"></i></i> 90% Dapat Mengerjakan Project sesuai Target</h5>
+                        <h5><i class="bi bi-check2-circle"></i>Harga yang Terjangkau</h5>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+            <!-- services section Ends -->
+      
+            
+            <!-- portfolio strats -->
+            <section id="portfolio" class="portfolio section-padding">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="section-header text-center pb-5">
+                              <h2 class="fw-semibold">Our Projects</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Non, quo.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-12 col-md-12 col-lg-4">
+                          <div class="card text-light text-center bg-white pb-2">
+                              <div class="card-body text-dark">
+                                <div class="img-area mb-4">
+                                    <img src="./assets/images/pr1.png" class="img-fluid" alt="">
+                                </div>
+                                  <h3 class="card-title">Building Make</h3>
+                                  <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p>
+                                  <button class="btn bg-warning text-dark">Learn More</button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-12 col-lg-4">
+                          <div class="card text-light text-center bg-white pb-2">
+                              <div class="card-body text-dark">
+                                <div class="img-area mb-4">
+                                    <img src="./assets/images/pr2.png" class="img-fluid" alt="">
+                                </div>
+                                  <h3 class="card-title">Building Make</h3>
+                                  <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p>
+                                  <button class="btn bg-warning text-dark">learn More</button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-12 col-lg-4">
+                          <div class="card text-light text-center bg-white pb-2">
+                              <div class="card-body text-dark">
+                                <div class="img-area mb-4">
+                                    <img src="./assets/images/pr3.png" class="img-fluid" alt="">
+                                </div>
+                                  <h3 class="card-title">Building Make</h3>
+                                  <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p>
+                                  <button class="btn bg-warning text-dark">Learn More</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </section>
+            <!-- portfolio ends -->
+            <!-- team starts -->
+            <section class="team section-padding" id="team">
+                <div class="container">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="section-header text-center pb-5">
+                              <h2 class="fw-semibold">Our Team</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Non, quo.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-12 col-md-6 col-lg-3">
+                          <div class="card text-center">
+                              <div class="card-body">
+                                  <img src="./assets/images/saya.png" alt="" class="img-fluid rounded-circle">
+                              <h3 class="card-title py-2">Saya</h3>
+                              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse quibusdam.</p>
+                              
+      
+                              <p class="socials">
+                                  <i class="bi bi-twitter text-dark mx-1"></i>
+                              <i class="bi bi-facebook text-dark mx-1"></i>
+                              <i class="bi bi-linkedin text-dark mx-1"></i>
+                              <i class="bi bi-instagram text-dark mx-1"></i>
+                              </p>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="col-12 col-md-6 col-lg-3">
+                          <div class="card text-center">
+                              <div class="card-body">
+                                  <img src="./assets/images/laptop.png" alt="" class="img-fluid rounded-circle">
+                              <h3 class="card-title py-2">Laptop</h3>
+                              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse quibusdam.</p>
+                              <p class="socials">
+                                  <i class="bi bi-twitter text-dark mx-1"></i>
+                              <i class="bi bi-facebook text-dark mx-1"></i>
+                              <i class="bi bi-linkedin text-dark mx-1"></i>
+                              <i class="bi bi-instagram text-dark mx-1"></i>
+                              </p>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="col-12 col-md-6 col-lg-3">
+                          <div class="card text-center">
+                              <div class="card-body">
+                                  <img src="./assets/images/internet.png" alt="" class="img-fluid rounded-circle">
+                              <h3 class="card-title py-2">Internet</h3>
+                              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse quibusdam.</p>
+                              <p class="socials">
+                                  <i class="bi bi-twitter text-dark mx-1"></i>
+                              <i class="bi bi-facebook text-dark mx-1"></i>
+                              <i class="bi bi-linkedin text-dark mx-1"></i>
+                              <i class="bi bi-instagram text-dark mx-1"></i>
+                              </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-3">
+                          <div class="card text-center">
+                              <div class="card-body">
+                                  <img src="./assets/images/doa.png" alt="" class="img-fluid rounded-circle">
+                              <h3 class="card-title py-2">Doa</h3>
+                              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse quibusdam.</p>
+                              <p class="socials">
+                                  <i class="bi bi-twitter text-dark mx-1"></i>
+                              <i class="bi bi-facebook text-dark mx-1"></i>
+                              <i class="bi bi-linkedin text-dark mx-1"></i>
+                              <i class="bi bi-instagram text-dark mx-1"></i>
+                              </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </section>
+            <!-- team ends -->
+
+               <!-- FAQ -->
+    <div class="faq" id="faq">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 class="fw-semibold section-header text-center pb-5">
+                Pertanyaan <br />
+                Yang Biasa di Tanyakan
+              </h2>
+            </div>
+          </div>
+          <div class="row row-cols-lg-2 row-cols-1 g-4 pt-4">
+            <div class="col">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed fw-semibold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Bagaimana Cara Daftarnya?</button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. At fuga magnam similique atque praesentium eaque obcaecati illum vitae, voluptatem fugit ex, alias incidunt asperiores porro dolorum vero delectus ad exercitationem?                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed fw-semibold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Apakah Ada Forum Diskusi?</button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aliquam magnam, placeat excepturi quisquam similique mollitia explicabo doloribus nostrum aspernatur quas voluptas non accusantium quia architecto
+                      obcaecati et officiis! Dolor.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed fw-semibold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Berapa DP Pembangunannya?</button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aliquam magnam, placeat excepturi quisquam similique mollitia explicabo doloribus nostrum aspernatur quas voluptas non accusantium quia architecto
+                      obcaecati et officiis! Dolor.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed fw-semibold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Apakah Produk - Produk Interiornya Mahal?
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aliquam magnam, placeat excepturi quisquam similique mollitia explicabo doloribus nostrum aspernatur quas voluptas non accusantium quia architecto
+                      obcaecati et officiis! Dolor.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed fw-semibold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Apakah Sudah Terverifikasi?</button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aliquam magnam, placeat excepturi quisquam similique mollitia explicabo doloribus nostrum aspernatur quas voluptas non accusantium quia architecto
+                      obcaecati et officiis! Dolor.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed fw-semibold lh-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Apakah Dapat Menawar Harga?</button>
+                  </h2>
+                  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aliquam magnam, placeat excepturi quisquam similique mollitia explicabo doloribus nostrum aspernatur quas voluptas non accusantium quia architecto
+                      obcaecati et officiis! Dolor.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FAQ -->
+
+      <!--Footer+Contact-->
+      <div class="footer pt-5" id="Contact">
+        <div class="container">
+          <div class="row row-cols-lg-3 row-cols-1 justify-content-between">
+            <div class="col col-lg-6 mb-lg-0 mb-4">
+            <a class="i w-bold fs-4" href="#"><span class="text-warning">Building</span>Con</a>
+
+              <p class="text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati esse reiciendis perspiciatis! Nulla quibusdam porro laborum doloremque reiciendis earum!</p>
+            </div>
+            <div class="col col-lg-2 d-flex flex-column mb-lg-0 mb-4">
+              <h5 class="fw-bold text-white">Menu</h5>
+              <a href="#home" class="text-white-50 mt-3 text-decoration-none">Home</a>
+              <a href="#about" class="text-white-50 mt-2 text-decoration-none">About</a>
+              <a href="#portfolio" class="text-white-50 mt-2 text-decoration-none">Projects</a>
+              <a href="#services" class="text-white-50 mt-2 text-decoration-none">Services</a>
+              <a href="#team" class="text-white-50 mt-2 text-decoration-none">Team</a>
+              <a href="#faq" class="text-white-50 mt-2 text-decoration-none">FAQ</a>
+            </div>
+            <div class="col col-lg-3 d-flex flex-column">
+              <h5 class="fw-bold text-white mb-3">Contact</h5>
+              <a href="#" class="text-decoration-none text-white-50 mt-2">aku@gmail.com</a>
+              <a href="#" class="text-decoration-none text-white-50 mt-2">+62 1234 5678 901</a>
+              <a href="#" class="text-decoration-none text-white-50 mt-2">@buildingID (Telegram)</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p class="text-white text-center copyright">&copy; Copyright 2024 by Shendy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+  
+
+      <!--JS AOS-->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
+      <!--js from bootstrap-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    </body>
+</html>
